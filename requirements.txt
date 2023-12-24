@@ -6,3 +6,5 @@ numpy
 datetime
 statsmodel
 streamlit_option_menu
+prophet
+arima
