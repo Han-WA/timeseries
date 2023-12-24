@@ -83,7 +83,7 @@ def app():
             model_predictions.append(yhat)
 
     st.subheader("Higher Confidence Interval" + "-" + str(model_predictions[0]+277.0296785004965))
-    st.subheader("Prediction price for the day" + "-" + str(model_predictions))
+    st.subheader("Prediction price for the day" + "-" + str(model_predictions[0]))
     st.subheader("Lower Confidence Interval" + "-" + str(model_predictions[0]-277.0296785004965))
 
     # combined_data = futuretime.merge(model_predictions, left_on='ds', right_on='yhat')
