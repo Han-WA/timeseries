@@ -6,4 +6,3 @@ numpy
 datetime
 streamlit_option_menu
 prophet
-arima==23.3.2
