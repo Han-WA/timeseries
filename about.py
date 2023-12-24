@@ -8,7 +8,7 @@ from datetime import datetime
 def app():
     st.title("About Project")
 
-    mydata = pd.read_csv(r"D:\dashboard\xauusd_d.csv")
+    mydata = pd.read_csv("xauusd_d.csv")
 
     about = '''This project involves the analysis and forecasting of gold prices using a dataset obtained from stooq.com.
     The dataset spans from January 1, 2010, to the current date in December. 
