@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-import about, prop, arim
+import about, prop
 
 st.set_page_config(
     page_title = "Dashboard"
@@ -20,8 +20,8 @@ class MultiApp:
         with st.sidebar:
             app = option_menu(
             menu_title = "GOLD Prediction", 
-            options = ["About Project", "PROPHET Model", "ARIMA Model"],
-            icons = ["clipboard2-fill","graph-up-arrow", "graph-up-arrow" ],
+            options = ["About Project", "PROPHET Model"],
+            icons = ["clipboard2-fill","graph-up-arrow"],
             menu_icon = "grid-fill",
         )
             
@@ -29,7 +29,5 @@ class MultiApp:
             about.app()
         if app == "PROPHET Model":
             prop.app()
-        if app == "ARIMA Model":
-            arim.app()
     
     run()
