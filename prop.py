@@ -5,7 +5,7 @@ import plotly.express as px
 from datetime import datetime
 from pandas import DataFrame
 
-dataset = pd.read_csv(r"D:\dashboard\xauusd_d.csv")
+dataset = pd.read_csv("xauusd_d.csv")
 
 data = pd.DataFrame()
 data['ds'] = []
